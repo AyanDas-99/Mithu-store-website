@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { Orders } from '../pages/orders'
 
 export const Nav = () => {
     return (
