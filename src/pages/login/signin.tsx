@@ -1,6 +1,8 @@
 import { provider, auth } from '../../config/firebase';
 import { signInWithPopup, signOut } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
+import './signin.css'
+import googleLogo from '../../assets/images/google-logo.png';
 
 export const Login = () => {
 
@@ -19,8 +21,13 @@ export const Login = () => {
 
     return (
         <div className="Login-form">
-            <button onClick={googleSignIn}>Sign In</button>
-            <button onClick={eventSignOut}>Sign Out</button>
+            <div className='side'>
+                <h1>LOGIN</h1>
+            </div>
+            <div className='btns'>
+                <div className={'loginBtn logBtn'} onClick={googleSignIn}><img src={googleLogo} alt="google logo" />Sign In With Google</div>
+                <div className='logoutBtn logBtn' onClick={eventSignOut}>Sign Out</div>
+            </div>
         </div>
     )
 }
