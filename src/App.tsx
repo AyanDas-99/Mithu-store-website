@@ -7,6 +7,7 @@ import { Contact } from './pages/contact'
 import { Login } from './pages/login/signin'
 import { Nav } from './components/navbar'
 import { Error } from './pages/error'
+import { Orders } from './pages/orders';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/login' element={< Login />} />
           <Route path='/contact' element={< Contact />} />
           <Route path='/about' element={< About />} />
+          <Route path='/orders' element={<Orders />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </Router>
