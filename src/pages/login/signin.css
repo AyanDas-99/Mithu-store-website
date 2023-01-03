@@ -1,0 +1,66 @@
+.Login-form {
+    width: fit-content;
+    margin: 3em auto;
+    display: flex;
+    width: 50vw;
+    box-shadow: 0 0 5px grey;
+    height: 65vh;
+}
+
+.Login-form .side {
+    background-image: url('../../assets/images/rice-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: rgb(189, 189, 189);
+    background-blend-mode: color-burn;
+    font-family: var(--ff-main);
+    letter-spacing: 7px;
+}
+
+.side h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+
+.btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+}
+
+.loginBtn img {
+    width: 20px;
+}
+
+.loginBtn {
+    padding: 1em;
+    width: 80%;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.logoutBtn {
+    padding: 1em;
+    width: 80%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.logBtn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px grey;
+}
