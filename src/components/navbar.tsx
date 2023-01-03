@@ -12,6 +12,7 @@ import { useState } from 'react';
 interface UserInterface {
     displayName: string | null;
     photoURL: string | null;
+    email: string | null;
 }
 
 
@@ -31,10 +32,11 @@ export const Nav = () => {
                     <Link to={'/orders'}>Orders</Link>
                     <Link to={'/about'}>About Us</Link>
                     <Link to={'/contact'}>Contact Us</Link>
-                    {user ? <User displayName={user?.displayName} photoURL={user?.photoURL} /> : <Link to={'/login'}>Login</Link>}
+                    {!user && <Link to={'/login'}>Login</Link>}
 
                 </ul>
             </nav>
+            {user && <User displayName={user?.displayName} photoURL={user?.photoURL} email={user?.email}/>}
         </div>
     )
 }
@@ -52,8 +54,10 @@ const User = (user: UserInterface) => {
             {profileVisible &&
                 <div className='profile'>
                     <h3>{user.displayName}</h3>
-                    <button onClick={() => navigate('/login')}>Switch Account</button>
-                    <button onClick={() => signOut(auth)}>Logout</button>
+                    <p>{user.email}</p>
+                    <div className='divider'></div>
+                    <button className='green-bg' onClick={() => navigate('/login')}>Switch Account</button>
+                    <button className='red-bg' onClick={() => signOut(auth)}>Logout</button>
                 </div>
             }
         </div>

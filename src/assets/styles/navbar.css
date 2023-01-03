@@ -70,6 +70,14 @@ nav ul {
     border-radius: 50%;
 }
 
+.profile-pic:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .profile {
     position: absolute;
     background-color: white;
@@ -88,10 +96,20 @@ nav ul {
     margin: 0 auto;
     padding: 10px;
     width: 150px;
-    background: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
 }
 
 .divider {
     width: 100%;
     border-bottom: 1px solid black;
+}
+
+.red-bg {
+    background-color: red;
+}
+
+.green-bg {
+    background-color: limegreen;
 }
