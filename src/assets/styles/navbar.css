@@ -13,13 +13,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em;
-    gap: 3em;
+    padding:.5em 1em;
+    gap: 5em;
     border: 1px solid black;
 }
 
 .main-logo img {
-    max-width: 100px;
+    max-width: 50px;
     display: block;
     margin: 0 .3em;
 }
@@ -27,7 +27,6 @@ a {
 .main-logo {
     display: flex;
     align-items: center;
-    font-size: x-large;
     color: black;
     letter-spacing: 5px;
     color: green;
@@ -39,7 +38,7 @@ a {
 }
 
 .search-bar input[type="image"]{
-    width: 30px;
+    width: 20px;
     height: auto;
     margin: .3em;
 }
@@ -55,7 +54,6 @@ a {
 }
 
 nav {
-    font-size: larger;
     width: 100%;
 }
 
@@ -70,4 +68,30 @@ nav ul {
 .profile-pic img {
     width: 60px;
     border-radius: 50%;
+}
+
+.profile {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    border-radius: 10px;
+    right: 2.5em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.profile button {
+    margin: 0 auto;
+    padding: 10px;
+    width: 150px;
+    background: none;
+}
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid black;
 }
